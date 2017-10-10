@@ -1,0 +1,6 @@
+ze/base/AbstractPage.class
+ze/pageobjects/landing/LoginPage.class
+ze/pageobjects/landing/HomePage.class
+ze/pageobjects/landing/RegistrationPage.class
+ze/pageobjects/landing/AddressOutOfAreaPage.class
+ze/pageobjects/landing/ProductPage.class
