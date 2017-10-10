@@ -114,6 +114,8 @@ o	Refrigerantes
 -	Structure: Maven Project, Page Objects
 
 In addition, there are other frameworks may be used such as, cucumber (BDD) and TestNG.
+Important: Should be in the scope which browsers are supported such as (Chrome, Firefox, Safari, Opera, IE, Edge) as well as the acceptable versions.
+
 
 ## BACKEND - Test Plan
 
@@ -179,7 +181,7 @@ For API testing, should be checked the response (body) and status-code for examp
 ### Platforms: Android and iOS
 
 Product Owner or Business Analyst needs to define which type of mobiles should be supported, for instance:
-(Escope of the project)
+(Scope of the project)
 -	Which APIs?
 -	Which Screen Resolution?
 -	Which Versions?
