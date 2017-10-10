@@ -114,7 +114,7 @@ o	Refrigerantes
 -	Structure: Maven Project, Page Objects
 
 In addition, there are other frameworks may be used such as, cucumber (BDD) and TestNG.
-Important: Should be in the scope which browsers are supported such as (Chrome, Firefox, Safari, Opera, IE, Edge) as well as the acceptable versions.
+- Important: Should be in the scope which browsers are supported such as (Chrome, Firefox, Safari, Opera, IE, Edge) as well as the acceptable versions.
 
 
 ## BACKEND - Test Plan
