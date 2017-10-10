@@ -1,4 +1,4 @@
-#Follows the test plan that considers important for the business. In addition, I am aware that the system has more functionalities than written below. Following that, it is possible to automate all these test cases.
+# Follows the test plan that considers important for the business. In addition, I am aware that the system has more functionalities than written below. Following that, it is possible to automate all these test cases.
 
 ## FRONTEND - Test Plan
 
