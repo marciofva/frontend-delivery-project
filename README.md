@@ -1,6 +1,6 @@
 ## FRONTEND - Test Plan
 
-### REGISTRATION FLOW
+### REGISTRATION PAGE
 
 -	Enter all valid data
 -	Leave name field blank
