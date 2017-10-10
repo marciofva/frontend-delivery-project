@@ -16,12 +16,12 @@
 -	Leave phone field blank
 -	Enter an incomplete phone
 -	Leave email field blank
--	Enter email with a wrong format
+-	Enter email with a wrong email format
 -	Enter a valid email with spaces in the end
 -	Leave repeatEmail field blank
--	Enter repeatEmail with a wrong format
+-	Enter repeatEmail with a wrong email format
 -	Enter a valid repeatEmail with spaces in the end
--	Enter email and repeatEmail with different values
+-	Enter an email and a repeatEmail with different values
 -	Leave password field blank
 -	Enter password with less than 6 long characters
 -	Enter password with 6 long characters
@@ -31,24 +31,25 @@
 
 ### ADDRESS (HOME PAGE)
 
--	Enter a valid full address that is out of area
--	Enter a valid full address that is within the area
+-	Enter a valid full address that is out of the area ==> area not supported
+-	Enter a valid full address that is within the area ==> area supported
 -	Enter a non-existent address
 -	Enter an incomplete address
 -	Leave number field blank
 -	Enter letters in number field
 -	Enter special characters in number field
 -	Leave complemento field blank
--	Enter letters in complemento field
+-	Enter only letters in complemento field
+-	Enter only numbers in complemento field
 -	Enter special characters in complemento field
--	Validate if the displayed map in the screen corresponds to the address => Should be validated manually in frontend
+-	Validate if the displayed map in the screen corresponds to the inserted address => Should be validated manually in frontend, because it is the image (picture)
 
 
 ### PLACE ORDER (PRODUCT PAGE)
 
--	Validate if the category in dropdown is set “Todos” as default
+-	Validate if the category in dropdown is set “Todos” as a default.
 
--	Validate the characteristics of each product in screen, should have:
+-	Validate the characteristics of each product in screen, such as:
 o	Description
 o	Image
 o	Price
@@ -56,23 +57,23 @@ o	Subtract button
 o	Text field in which has the quantity of products ordered
 o	Add button  
 
--	Validate “Add” button in which should update the total price in the footer when clicked (increase the price)
+-	Validate “Add” button in which should sum the total price in the footer when clicked (increase the price in the footer).
 
--	Validate “Subtract” button in which should update the total price in the footer when clicked (decrease the price)
+-	Validate “Subtract” button in which should subtract the total price in the footer when clicked (decrease the price in the footer).
 
--	Click on “Subtract” button when does not have any order for this product 
+-	Click on “Subtract” button when does not have any order for this product.
 
--	Validate the Text field (number of products ordered) in the product card when clicking on “Add” button => should increase in 1 by 1 the quantity of products ordered
+-	Validate the Text field which contains the number of products ordered in the product card when clicking on “Add” button => should increase in 1 by 1 the quantity of products ordered.
 
--	Validate the Text field (number of products ordered) in the product card when clicking on “Subtract” button => should decrease in 1 by 1 the quantity of products ordered
+-	VValidate the Text field which contains the number of products ordered in the product card when clicking on “Subtract” button => should decrease in 1 by 1 the quantity of products ordered.
 
--	Click on “FECHA A CONTA, ZÉ” when total price is less then R$35,00
+-	Click on “FECHA A CONTA, ZÉ” when total price is less then R$35,00 ==> It is NOT allowed.
 
--	Click on “FECHA A CONTA, ZÉ” when total price is R$35,00
+-	Click on “FECHA A CONTA, ZÉ” when total price is R$35,00.
 
--	Click on “FECHA A CONTA, ZÉ” when total price is R$35,01
+-	Click on “FECHA A CONTA, ZÉ” when total price is R$35,01.
 
--	Place order in all categories, follows the categories:
+-	Navigate for all categories, follows the categories:
 o	Todos 
 o	Balas & Doces
 o	Cervejas
@@ -85,25 +86,25 @@ o	Para festas & churrascos
 o	Para matar a fome
 o	Refrigerantes
 
--	Click on “FECHA A CONTA, ZÉ” containing products ordered regarding one category only
+-	Click on “FECHA A CONTA, ZÉ” containing products ordered for one category only.
 
--	Click on “FECHA A CONTA, ZÉ” containing products ordered regarding two categories only
+-	Click on “FECHA A CONTA, ZÉ” containing products ordered for two categories only.
 
--	Click on “FECHA A CONTA, ZÉ” containing products ordered regarding four categories only
+-	Click on “FECHA A CONTA, ZÉ” containing products ordered for four categories only.
 
--	Click on “FECHA A CONTA, ZÉ” containing products ordered regarding five categories only
+-	Click on “FECHA A CONTA, ZÉ” containing products ordered for five categories only.
 
--	Click on “FECHA A CONTA, ZÉ” containing products ordered regarding six categories only
+-	Click on “FECHA A CONTA, ZÉ” containing products ordered for six categories only.
 
--	Click on “FECHA A CONTA, ZÉ” containing products ordered regarding seven categories only
+-	Click on “FECHA A CONTA, ZÉ” containing products ordered for seven categories only.
 
--	Click on “FECHA A CONTA, ZÉ” containing products ordered regarding eight categories only
+-	Click on “FECHA A CONTA, ZÉ” containing products ordered for eight categories only.
 
--	Click on “FECHA A CONTA, ZÉ” containing products ordered regarding nine categories only
+-	Click on “FECHA A CONTA, ZÉ” containing products ordered for nine categories only.
 
--	Click on “FECHA A CONTA, ZÉ” containing products ordered regarding teen categories only
+-	Click on “FECHA A CONTA, ZÉ” containing products ordered for teen categories only.
 
--	Click on “FECHA A CONTA, ZÉ” containing products ordered regarding all categories
+-	Click on “FECHA A CONTA, ZÉ” containing products ordered for all categories.
 
 -	Validate total price in the footer.
 
@@ -140,7 +141,7 @@ In addition, there are other frameworks may be used such as, cucumber (BDD) and 
   ]
 }
 
-### API REST – POST (Create a new resource)
+### API Rest – POST (Create a new resource)
 
 -	Perform a POST request passing all valid data. 
 -	Perform a POST request without “id”
@@ -157,19 +158,21 @@ In addition, there are other frameworks may be used such as, cucumber (BDD) and 
 -	Perform a POST request without “coordinates” in “address” root
 -	Perform a POST request passing invalid “coordinates” in “address” root
 
-### API REST – GET (Search by id)
+### API Rest – GET (Search by id)
 
--	Perform a GET request passing an existent id
--	Perform a GET request passing a non-existent id
--	Perform a GET request passing alphanumeric value (letters) in id
+-	Perform a GET request passing an existent "id"
+-	Perform a GET request passing a non-existent "id"
+-	Perform a GET request passing alphanumeric value (letters) in "id"
 
-### API REST – GET (Search by PDV-location) => should bring the closest place
+### API Rest – GET (Search by PDV-location) => should bring the closest place
 
 -	Perform a GET request passing a valid lng and lat
 
 ### TECHNOLOGIES (Backend Automation):
 -	Programming Language: Ruby
 -	Frameworks: Httparty, Cucumber (BDD)
+
+For API testing, should be checked the response (body) and status-code for example: (200, 400, 404, 405, 500)
 
 ## QA-MOBILE
 
@@ -189,7 +192,9 @@ Product Owner or Business Analyst needs to define which type of mobiles should b
 -	Test execution using physical devices 
 -	Test execution using several virtual devices. In this case, it is possible to use XCode to create simulators
 
-### TECHNOLOGIES (Frontend Automation):
+### TECHNOLOGIES (Frontend-Mobile Automation):
 -	Programming Language: Java or Ruby
 -	Frameworks: Selenium-webdriver, Appium
 -	Structure: Page Objects
+
+Important: For mobiles is necessary to perform a detailed manual tests in order to validate if the screen has not broken or is missing something. So, devices are more sensitive.
